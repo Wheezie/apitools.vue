@@ -11,13 +11,13 @@
 </style>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import Login from '@/components/Login.vue'; // @ is an alias to /src
+import { defineComponent } from 'vue';
 
-@Options({
+import Login from '@/apitools/components/Login.vue';
+
+export default defineComponent({
   components: {
-    Login,
-  },
-})
-export default class Home extends Vue {}
+    Login
+  }
+});
 </script>
